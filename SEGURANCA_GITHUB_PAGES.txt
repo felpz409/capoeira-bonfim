@@ -1,0 +1,21 @@
+SITE CAPOEIRA BONFIM — GITHUB PAGES
+
+1) Envie os arquivos e a pasta imagens para a raiz do repositório publicado (ou pasta docs se for sua configuração).
+2) Em Settings > Pages, selecione Deploy from a branch, branch principal e pasta apropriada, se ainda não configurado.
+3) Marque Enforce HTTPS em Settings > Pages (depois de o certificado estar disponível).
+4) Na conta GitHub, configure autenticação em dois fatores e senha exclusiva e forte.
+5) Restrinja quem pode alterar o repositório; não publique tokens, senhas, chaves ou arquivos privados.
+6) Se usa domínio próprio, verifique a propriedade do domínio na conta GitHub e use DNS indicado pelo GitHub.
+7) Confira página inicial, homenagem, agradecimentos e todas as fotos depois de publicar.
+
+POLÍTICAS IMPLEMENTADAS
+- CSP via meta tag do HTML para restringir scripts, imagens, estilos, conexões e frames.
+- JS e CSS em arquivos locais, sem dependências externas.
+- Referrer policy por meta tag.
+- .nojekyll desativa processamento Jekyll automático.
+
+LIMITAÇÕES
+- GitHub Pages não usa .htaccess nem _headers para configurar cabeçalhos HTTP.
+- X-Frame-Options, HSTS personalizado, Permissions-Policy e frame-ancestors exigem controle dos cabeçalhos na hospedagem/CDN. Uma meta CSP NÃO substitui frame-ancestors.
+- A presença de arquivos privados em um repositório público os tornaria públicos.
+- Nenhuma configuração garante segurança absoluta ou impede comprometimento da conta GitHub.

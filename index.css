@@ -1,0 +1,83 @@
+
+:root{--blue:#123e78;--deep:#07182c;--gold:#f3c343;--cream:#f8f6ef;--ink:#17202b}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:var(--cream);line-height:1.7}
+header{position:sticky;top:0;z-index:5;background:rgba(7,24,44,.97);color:white;box-shadow:0 3px 18px #0002}
+.nav{max-width:1160px;margin:auto;padding:13px 22px;display:flex;align-items:center;justify-content:space-between;gap:20px}.logo{font-weight:800;letter-spacing:.5px}.logo span{color:var(--gold)}nav{display:flex;gap:17px;flex-wrap:wrap}nav a{color:white;text-decoration:none;font-size:.92rem}nav a:hover{color:var(--gold)}
+.hero{min-height:78vh;display:grid;place-items:center;text-align:center;color:white;padding:70px 22px;background:linear-gradient(110deg,rgba(5,24,47,.87),rgba(12,49,94,.48)),url('imagens/capoeira_3.jpg') center 45%/cover}
+.hero-inner{max-width:880px}.eyebrow{text-transform:uppercase;letter-spacing:3px;color:#e9b72d;font-weight:700;font-size:.83rem}h1{font-size:clamp(2.4rem,6vw,5rem);line-height:1.06;margin:15px 0}h2{font-size:clamp(1.8rem,3vw,2.7rem);line-height:1.15;color:var(--deep);margin:0 0 18px}.hero p{font-size:1.15rem;max-width:700px;margin:20px auto 28px}
+.btn{display:inline-block;padding:12px 20px;border-radius:5px;background:var(--gold);color:var(--deep);font-weight:800;text-decoration:none;margin:5px}.btn.outline{background:transparent;border:1px solid white;color:white}
+section{padding:76px 22px}.wrap{max-width:1120px;margin:auto}.intro{text-align:center;max-width:820px;margin:0 auto 38px}.intro p{color:#4b5664}
+.history{background:white}.history-layout{display:grid;grid-template-columns:1fr .9fr;gap:40px;align-items:start}.history-photo{width:100%;max-height:490px;object-fit:cover;border-radius:12px;position:sticky;top:100px}.history-copy p{margin:0 0 16px}.note{font-size:.91rem;color:#4c5866;border-left:4px solid var(--gold);padding:13px 16px;background:#f7f5ed;margin-top:20px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.card{background:white;border-radius:12px;overflow:hidden;box-shadow:0 8px 24px #122b4510}.card img{width:100%;height:230px;object-fit:cover;display:block}.card-content{padding:20px}.card h3{margin:0 0 8px;color:var(--blue)}
+.values{background:var(--deep);color:white}.values h2{color:white}.values .intro p{color:#d5deea}.value-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.value{padding:24px;border:1px solid #ffffff2c;border-radius:10px}.value b{color:var(--gold);font-size:1.15rem}
+.gallery-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}.gallery figure{margin:0;background:white;border-radius:10px;overflow:hidden;box-shadow:0 5px 20px #0000000c}.gallery img{width:100%;height:300px;object-fit:cover;display:block}.gallery figcaption{font-size:.88rem;color:#465263;padding:12px 15px}
+.cta{text-align:center;background:#e9edf3}.cta p{max-width:760px;margin:0 auto 20px}
+
+.homage{background:linear-gradient(110deg,rgba(255,255,255,.95),rgba(255,255,255,.88)),url('imagens/homenagem_domenico_lucy_2.png') center/cover}
+.homage-layout{display:grid;grid-template-columns:1.02fr .98fr;gap:28px;align-items:center}
+.homage-copy p{margin:0 0 16px}.homage-copy strong{color:var(--blue)}
+.homage-gallery{display:grid;grid-template-columns:1fr;gap:18px}
+.homage-gallery figure{margin:0;background:white;border-radius:14px;overflow:hidden;box-shadow:0 10px 24px #00000014}
+.homage-gallery img{display:block;width:100%;height:270px;object-fit:cover}
+.homage-gallery figcaption{padding:12px 15px;font-size:.92rem;color:#4d5968}
+@media(max-width:760px){.homage-layout{grid-template-columns:1fr}.homage-gallery img{height:230px}}
+
+footer{background:#07182c;color:#dbe3ee;padding:30px 22px;text-align:center;font-size:.9rem}footer a{color:var(--gold)}
+@media(max-width:760px){.nav{align-items:flex-start;flex-direction:column}nav{gap:12px}.history-layout,.grid,.value-grid,.gallery-grid{grid-template-columns:1fr}.history-photo{position:static;height:300px;grid-row:1}.hero{min-height:70vh}section{padding:55px 18px}.gallery img{height:250px}}
+
+/* Fotografias originais do grupo utilizadas nos fundos, com contraste para leitura. */
+body{background:linear-gradient(rgba(248,246,239,.91),rgba(248,246,239,.91)),url('imagens/capoeira_4.jpg') center top / cover fixed}
+.hero{background:linear-gradient(110deg,rgba(5,20,41,.88),rgba(5,20,41,.51)),url('imagens/capoeira_3.jpg') center 45% / cover}
+.history{background:linear-gradient(105deg,rgba(255,255,255,.96),rgba(255,255,255,.89)),url('imagens/capoeira_1.jpg') center / cover}
+#aprendizado{background:linear-gradient(110deg,rgba(250,248,240,.94),rgba(250,248,240,.85)),url('imagens/capoeira_2.jpg') center / cover}
+#aprendizado .card{background:rgba(255,255,255,.96)}
+.values{background:linear-gradient(110deg,rgba(7,24,44,.94),rgba(7,24,44,.82)),url('imagens/capoeira_5.jpg') center 42% / cover}
+.values .value{background:rgba(7,24,44,.42);backdrop-filter:blur(3px)}
+.gallery{background:linear-gradient(rgba(248,246,239,.93),rgba(248,246,239,.88)),url('imagens/capoeira_4.jpg') center / cover}
+.cta{background:linear-gradient(110deg,rgba(248,246,239,.96),rgba(248,246,239,.86)),url('imagens/capoeira_1.jpg') center 50% / cover}
+.hero,.history,#aprendizado,.values,.gallery,.cta{background-repeat:no-repeat}
+@media(max-width:760px){body{background-attachment:scroll}.hero{background-position:center}.values{background-position:center}}
+
+.momentos{background:linear-gradient(115deg,rgba(247,246,241,.96),rgba(247,246,241,.86)),url('imagens/roda.jpg') center/cover}
+.moment{display:grid;grid-template-columns:1.08fr .92fr;gap:28px;align-items:center;background:#fff;border-radius:16px;overflow:hidden;box-shadow:0 14px 38px #091e3220;margin:22px 0}
+.moment:nth-child(even){grid-template-columns:.92fr 1.08fr}.moment:nth-child(even) img{order:2}
+.moment img{width:100%;height:335px;object-fit:cover;display:block}.moment .story{padding:28px}.moment .story h3{font-size:1.4rem;color:#123e78;margin:5px 0 12px}.moment .story p{margin:0}.moment .story .num{color:#a37b1b;font-weight:800;letter-spacing:2px;font-size:.77rem}
+@media(max-width:760px){.moment,.moment:nth-child(even){display:flex;flex-direction:column;gap:0}.moment:nth-child(even) img{order:0}.moment img{height:240px}.moment .story{padding:22px}}
+
+
+.tribute-section{color:white;background:linear-gradient(120deg,rgba(5,18,36,.96),rgba(9,39,78,.88)),url('imagens/homenagem_domenico_lucy_2.png') center/cover;padding:76px 22px}
+.tribute-wrap{max-width:1120px}.tribute-section .title-block{text-align:center;max-width:880px;margin:0 auto 36px}
+.tribute-section .title-block h1{font-size:clamp(2rem,5vw,3.4rem);line-height:1.15;margin:12px 0;color:white}
+.tribute-section .kicker{text-transform:uppercase;letter-spacing:3px;color:#f3c343;font-weight:bold;font-size:.85rem}
+.tribute-section .subtitle{color:#e8eef6}.tribute-section .rule{width:90px;height:4px;background:#f3c343;margin:25px auto;border-radius:3px}
+.tribute-section .content{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:start}
+.tribute-section .message{font-size:1.04rem;line-height:1.8}.tribute-section .message p{margin:0 0 17px}
+.tribute-section h2{color:#f3c343;font-size:1.6rem}
+.tribute-section .signature{font-weight:800;font-size:1.1rem}
+.tribute-section .photos{display:grid;gap:20px}.tribute-section .photo-card{margin:0;background:rgba(255,255,255,.10);border-radius:14px;overflow:hidden}
+.tribute-section .photo-card img{width:100%;height:310px;object-fit:cover;display:block}.tribute-section .photo-card figcaption{padding:14px 16px;color:#ecf1f8}
+.tribute-section .btns{display:flex;gap:12px;flex-wrap:wrap}.tribute-section .btn.alt{background:transparent;color:white;border:1px solid #ffffff66}
+.tribute-section .testimonials{margin-top:60px;padding-top:44px;border-top:1px solid #ffffff44;scroll-margin-top:90px}
+.tribute-section .testimonials>h2{color:white;text-align:center;font-size:clamp(1.9rem,4vw,2.65rem)}.tribute-section .sub{text-align:center;max-width:800px;margin:0 auto 30px;color:#e8eef6}
+.tribute-section .testimonials-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+.tribute-section .testimony{padding:28px;border-radius:14px;background:rgba(255,255,255,.13);border:1px solid rgba(255,255,255,.28);min-width:0}
+.tribute-section .testimony h2{color:#f3c343;font-size:1.3rem}.tribute-section .testimony p{margin:0 0 17px;line-height:1.8}
+.tribute-section .who{display:block;border-top:1px solid #ffffff44;margin-top:26px;padding-top:15px;font-weight:800;color:#f3c343}
+.tribute-section .later{margin:26px auto 0;text-align:center;border:1px dashed #f3c343;padding:23px;border-radius:12px;max-width:760px}.tribute-section .later strong{display:block;color:#f3c343}
+#homenagem{scroll-margin-top:75px}#galeria,#momentos,#depoimentos{scroll-margin-top:80px}
+@media(max-width:790px){.tribute-section .content,.tribute-section .testimonials-grid{grid-template-columns:1fr}.tribute-section .photo-card img{height:auto;max-height:480px}.tribute-section{padding:55px 18px}.nav{gap:12px}}
+
+
+.menu-toggle{display:none;background:transparent;border:1px solid #f3c343;color:white;padding:9px 14px;border-radius:6px;font:inherit;cursor:pointer}
+a:focus-visible,button:focus-visible{outline:3px solid #f3c343;outline-offset:3px}
+.gallery img,.moment img,.photo-card img{cursor:zoom-in}
+.lightbox{position:fixed;inset:0;z-index:100;background:rgba(2,9,20,.94);display:none;align-items:center;justify-content:center;padding:55px 20px 65px}
+.lightbox.open{display:flex}.lightbox img{max-width:95vw;max-height:82vh;object-fit:contain}
+.lightbox button{position:absolute;top:12px;right:20px;background:#f3c343;border:0;border-radius:6px;padding:8px 14px;font-size:20px;cursor:pointer}
+.lightbox p{position:absolute;bottom:12px;color:white;text-align:center}
+@media(max-width:760px){.nav{flex-direction:row;align-items:center;flex-wrap:wrap}.menu-toggle{display:block}header nav{display:none;width:100%;flex-direction:column;gap:0}header nav.open{display:flex}header nav a{padding:11px 0;border-top:1px solid #ffffff25}.hero{min-height:65vh}.hero .btn{max-width:100%}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+.safe-inline-1{padding:76px 22px;background:linear-gradient(110deg,rgba(9,31,59,.93),rgba(10,41,78,.85)),url('imagens/homenagem_domenico_lucy_2.png') center / cover;color:white;text-align:center}
+.safe-inline-2{color:white}
+.safe-inline-3{max-width:700px;margin:0 auto 22px}

@@ -1,0 +1,16 @@
+
+:root{--blue:#123e78;--deep:#07182c;--gold:#f3c343;--cream:#f8f6ef}
+*{box-sizing:border-box}body{margin:0;font-family:Arial,Helvetica,sans-serif;background:linear-gradient(120deg,rgba(5,18,36,.92),rgba(9,39,78,.82)),url('imagens/homenagem_domenico_lucy_2.png') center/cover fixed;color:white;line-height:1.75}
+header{padding:18px 22px;border-bottom:1px solid #ffffff25;background:rgba(4,15,29,.45);backdrop-filter:blur(4px)}header a{color:#f3c343;text-decoration:none;font-weight:bold}
+main{width:100%;padding:48px 20px 60px}.wrap{max-width:1120px;margin:auto}.panel{padding:clamp(24px,5vw,42px);border:1px solid rgba(255,255,255,.22);border-radius:20px;background:rgba(6,21,43,.76);backdrop-filter:blur(7px);box-shadow:0 20px 60px #0003}
+.kicker{text-transform:uppercase;letter-spacing:4px;color:var(--gold);font-weight:bold;font-size:.82rem}.title-block{text-align:center;max-width:920px;margin:0 auto 28px}h1{font-size:clamp(2.3rem,6vw,4.1rem);line-height:1.08;margin:15px 0 18px}h2{font-size:1.35rem;color:var(--gold);margin:0 0 10px}.subtitle{font-size:1.07rem;color:#e8eef6}.rule{width:90px;height:4px;background:var(--gold);margin:28px auto;border-radius:3px}
+.content{display:grid;grid-template-columns:1.02fr .98fr;gap:26px;align-items:start}.message{font-size:1.06rem;color:#edf2f9}.message p{margin:0 0 16px}.signature{font-size:1.18rem;font-weight:bold;margin-top:28px}
+.photos{display:grid;gap:18px}.photo-card{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.18);border-radius:16px;overflow:hidden}.photo-card img{display:block;width:100%;height:320px;object-fit:cover}.photo-card figcaption{padding:14px 16px;color:#e5edf8;font-size:.95rem}
+.btns{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}.btn{display:inline-block;background:var(--gold);color:var(--deep);padding:12px 22px;border-radius:5px;text-decoration:none;font-weight:bold}.btn.alt{background:transparent;border:1px solid rgba(255,255,255,.45);color:white}
+footer{text-align:center;padding:20px;color:#d2dbe8;font-size:.9rem}
+@media(max-width:820px){body{background-attachment:scroll}.content{grid-template-columns:1fr}.photo-card img{height:260px}}
+
+.testimonials{margin-top:35px;padding-top:32px;border-top:1px solid #ffffff40}.testimonials>h2{text-align:center;font-size:clamp(1.7rem,3vw,2.2rem);color:white}.testimonials>.sub{text-align:center;max-width:760px;margin:0 auto 24px;color:#e8edf7}.testimonials-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}.testimony{background:rgba(255,255,255,.10);border:1px solid #ffffff30;padding:25px;border-radius:16px;min-width:0}.testimony p{margin:0 0 17px;white-space:normal}.testimony .who{display:block;color:var(--gold);font-weight:800;margin-top:22px;border-top:1px solid #ffffff2b;padding-top:14px}.later{border:1px dashed #e9c75b83;padding:20px;text-align:center;margin:25px auto 0;max-width:760px;border-radius:14px;color:#f1e8cf;background:#ffffff09}.later strong{color:var(--gold)}
+@media(max-width:820px){.testimonials-grid{grid-template-columns:1fr}}
+
+.safe-inline-1{text-align:center}
